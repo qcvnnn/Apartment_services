@@ -61,6 +61,7 @@ window.onload = function(){
         b = ''
         selectedOperation = ''
         expressionResult = ''
+        numberHistory = [];
         outputElement.innerHTML = 0
     }
 
@@ -150,30 +151,37 @@ document.getElementById("btn_op_000").onclick = function() {
     }
 }
 
+let numberHistory = [];
+
 document.getElementById("btn_op_avg").onclick = function() {
-    if (a === '') {
-        a = '0';
+    if (a !== '') {
+        numberHistory.push(parseFloat(a));
+        a = '';
     }
 
-    if (!selectedOperation) {
-        // Первое нажатие - запоминаем число
-        if (b !== '') {
-            // Если есть второе число, считаем среднее
-            let avg = (parseFloat(a) + parseFloat(b)) / 2;
-            a = avg.toString();
-            b = '';
-            outputElement.innerHTML = a;
-        }
-        selectedOperation = 'avg';
-    } else {
-        // Второе нажатие - прибавляем число к среднему
-        if (b !== '') {
-            let avg = (parseFloat(a) + parseFloat(b)) / 2;
-            a = avg.toString();
-            b = '';
-            outputElement.innerHTML = a;
-        }
+    if (b !== '') {
+        numberHistory.push(parseFloat(b));
+        b = '';
     }
+
+    if (numberHistory.length === 0) {
+        outputElement.innerHTML = "0";
+        return;
+    }
+
+    let sorted = [...numberHistory].sort((x, y) => x - y);
+    let median;
+    let mid = Math.floor(sorted.length / 2);
+
+    if (sorted.length % 2 === 0) {
+        median = (sorted[mid - 1] + sorted[mid]) / 2;
+    } else {
+        median = sorted[mid];
+    }
+
+    outputElement.innerHTML = median;
+
+    selectedOperation = null;
 }
 
 
