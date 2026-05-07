@@ -25,9 +25,10 @@ export class ProductPage {
     }
 
     getMissingServices(availableServices) {
-        const allServices = ["WiFi", "TV", "Кондиционер", "Кухня", "Джакузи", "Мини-бар", "Сауна", "Бассейн", "Завтрак", "Парковка"];
-        return allServices.filter(service => !availableServices.includes(service));
-    }
+    const allServices = ["WiFi", "TV", "Кондиционер", "Кухня", "Джакузи", "Мини-бар", "Сауна", "Бассейн", "Завтрак", "Парковка"];
+    const availableArray = availableServices.split(', ');
+    return allServices.filter(service => !availableArray.includes(service));
+}
 
     mergeObjects(obj1, obj2) {
         const result = {};
@@ -95,9 +96,7 @@ export class ProductPage {
                         </div>
                     </div>
 
-                    <button id="show-3d" style="background: #B49450; border: none; border-radius: 30px; padding: 12px 24px; color: white; cursor: pointer; width: 100%; font-size: 15px; font-weight: bold;">
-                        Посмотреть 3D модель
-                    </button>
+
                 </div>
             </div>
         `;
@@ -204,8 +203,6 @@ export class ProductPage {
         this.parent.insertAdjacentHTML('beforeend', this.getHTML(data));
 
         document.getElementById('home-btn').onclick = () => navigateTo('main');
-        document.getElementById('show-3d').onclick = () => {
-    this.show3DModel();
-};
+
     }
 }
