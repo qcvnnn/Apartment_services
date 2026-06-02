@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "src": "/images/art-gallery-1.webp",
+    "title": "Люкс",
+    "text": "Уютный номер 25 м², вид во двор",
+    "price": 9000,
+    "area": "21 м²",
+    "capacity": "2 взрослых",
+    "services": [
+      "WiFi",
+      "TV",
+      "Кондиционер"
+    ],
+    "bookingHistory": "1011100111"
+  },
+  {
+    "id": 4,
+    "src": "/images/new.webp",
+    "title": "Изменённое название",
+    "text": "Проверка создания",
+    "price": 7777
+  }
+]
