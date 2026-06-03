@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "src": "https://palmira-art.com/wp-content/uploads/2025/03/art-gallery-1.webp",
+    "title": "Стандарт",
+    "text": "Уютный номер 25 м², вид во двор",
+    "price": 9000,
+    "area": "21 м²",
+    "capacity": "2 взрослых",
+    "services": "WiFi, TV, Кондиционер",
+    "bookingHistory": "1011100111"
+  },
+  {
+    "id": 2,
+    "src": "https://palmira-art.com/wp-content/uploads/2024/11/standart-1-1.webp",
+    "title": "Студио",
+    "text": "Современная студия 35 м² с кухней",
+    "price": 11000,
+    "area": "35 м²",
+    "capacity": "2 взрослых",
+    "services": "WiFi, TV, Кухня, Кондиционер",
+    "bookingHistory": "1111000011"
+  },
+  {
+    "id": 3,
+    "src": "https://palmira-art.com/wp-content/uploads/2024/11/superior-6.webp",
+    "title": "Люкс",
+    "text": "Прекрасный просторный люкс 50 м²",
+    "price": 150,
+    "area": "",
+    "capacity": "2 взрослых + ребенок",
+    "services": "WiFi, TV, Джакузи, Мини-бар",
+    "bookingHistory": "111010100111",
+    "model3d": "models/Bedroom.glb"
+  },
+  {
+    "id": 4,
+    "src": "https://palmira-art.com/wp-content/uploads/2024/11/lux-9.webp",
+    "title": "Президентский",
+    "text": "Элитный номер 100 м² с террасой",
+    "price": 2400000000,
+    "area": "",
+    "capacity": "4 взрослых",
+    "services": "WiFi, TV, Сауна, Бассейн",
+    "bookingHistory": "1000000001"
+  }
+]

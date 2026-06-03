@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Апарт-отель | Удаленное заселение</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      .btn-primary {
+        background-color: #b49450;
+        border-color: #b49450;
+        color: black;
+        font-weight: 480;
+      }
+      h2 {
+        color: #b49450 !important;
+      }
+      .btn-primary:hover {
+        background-color: #8b6b2c;
+        border-color: #8b6b2c;
+      }
+
+      .btn-outline-primary {
+        color: #b49450;
+        border-color: #b49450;
+      }
+      .btn-outline-primary:hover {
+        background-color: #b49450;
+        color: white;
+      }
+
+      .price-gold {
+        color: #b49450;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .card {
+        border: none;
+        border-radius: 15px;
+        background-color: #fdf8f0;
+        color: black;
+      }
+
+      body {
+        margin: 0;
+        background-color: #fdf8f0;
+      }
+
+      .navbar {
+        background-color: #ece8dd;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .navbar-brand {
+        font-size: 22px;
+        font-weight: bold;
+        color: #b49450;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+
+      .filter-select {
+        padding: 8px 16px;
+        border: 1px solid #d4c5b0;
+        border-radius: 40px;
+        background-color: white;
+        color: #2c2c2c;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .btn-gold {
+        background-color: #b49450;
+        border: none;
+        border-radius: 40px;
+        padding: 8px 20px;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .btn-reset {
+        background-color: transparent;
+        border: 1px solid #d4c5b0;
+        border-radius: 40px;
+        padding: 8px 20px;
+        color: #6b6b6b;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .btn-add {
+        background-color: #b49450;
+        border: none;
+        border-radius: 40px;
+        padding: 8px 20px;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .btn-delete {
+        background-color: transparent;
+        border: 1px solid #b49450;
+        border-radius: 40px;
+        padding: 8px 20px;
+        color: #b49450;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      .btn-home {
+        background-color: transparent;
+        border: 1px solid #b49450;
+        border-radius: 40px;
+        padding: 8px 20px;
+        color: #b49450;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      #main-page {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 20px !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        margin: 0 !important;
+        padding: 20px !important;
+      }
+
+      #main-page .card {
+        margin: 0 !important;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-D2wqXp1s.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CqLr8KVv.css">
+  </head>
+  <body>
+    <nav class="navbar">
+  <div class="container" style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-bottom: 10px;">
+    <a class="navbar-brand" href="#" style="color: #B49450;">Удаленное заселение в апарт-отель</a>
+    <div id="main-page-controls" style="display: flex; align-items: center;">
+      <button id="home-main-btn" class="btn-home">Домой</button>
+    </div>
+  </div>
+</nav>
+
+    <div id="root"></div>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
